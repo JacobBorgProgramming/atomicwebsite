@@ -64,7 +64,7 @@ var q14 = Math.floor(Math.random() * 180);
 
 
 
-var result= a1+a5+a2+a6+a5+a3+a4+a7+a8+a2+q10*q13;
+var result= a1+a5+a2+a7+a4+a5+a4+a7+a8+a2+q11*q13;
 console.log(result);
 
 if (navigator.cookieEnabled === false){

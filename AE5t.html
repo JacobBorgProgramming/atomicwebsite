@@ -6,9 +6,9 @@
 <meta name="keywords" content="code, web development, security, privacy, data, data security, data privacy, data management">
 <html lang="en" style="background-color: rgb(14, 34, 41); background-image: url(./media/controlcenter.jpg); background-position: center; background-size: cover; color: #cecece;">
 <link rel="shortcut icon" href="https://dev.jacobborgprogramming.net/icons/logo.png">
-
+<link href="style.css" rel="stylesheet">
 <link rel="preload" href="https://dev.jacobborgprogramming.net/css.css" as="style">
-
+<head><script src="AE5encrypt.js"></script></head>
 <!--JazzBlocks required code-->
 <link rel="preload" href="https://jacobborgprogramming.github.io/JazzBlocksLibrary/libraries/JazzBlocks.css" as="style">
 <link rel="stylesheet" href="https://jacobborgprogramming.github.io/JazzBlocksLibrary/libraries/JazzBlocks.css">
@@ -16,7 +16,7 @@
 <link rel="preload" href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" as="style">
 <link href="https://fonts.googleapis.com/css?family=Chilanka|La+Belle+Aurore|Literata|Oswald|Ubuntu&display=swap" rel="stylesheet">
 <!--end-->
-<div class="menuWDM" style="background-color: #262626;position: fixed;top: 0mm;left: 0mm;width: 100%;padding: 3mm;box-shadow: 0mm 0mm 4mm #1a1a1a;height: 20mm;overflow-y: hidden;">
+<div class="menuWDM" style="background-color: #262626;width: 100%;padding: 3mm;box-shadow: 0mm 0mm 4mm #1a1a1a;height: 20mm;overflow-y: hidden;">
   <center><a href="https://dev.jacobborgprogramming.net/home.html"><img src="https://dev.jacobborgprogramming.net/icons/logo.png" width="80mm"></a></center>
 </div>
 
@@ -27,23 +27,40 @@
     <div style="background-color: #262626; box-shadow: 0mm 0mm 4mm #1a1a1a;">
 
       <p style="text-align: center; padding-top:1mm;" class="pc_l">Atomic Password Generator</p>
-      <p style="text-align: center; padding-top:1mm;" class="pc_s">Fallout: 1.1.0</p>
       <p style="text-align: center; padding-top:1mm;" class="pc_s">AE5</p>
+      <div class="center top-relative">
+           <div class="content voilet1">
+               <span>Enter Password for Encryption</span>
+               <input class="f15pt" type="password" id="passcode" placeholder="password" />
+           </div>
+           <div class="content voilet2">
+               <span>Put Or Type Text Here</span>
+               <textarea id="originalContent"></textarea>
+           </div>
+           <div class="content voilet0">
+               <span>Encrypted Form</span>
+               <textarea id="encryptedContent" readonly></textarea>
+           </div>
+           <div class="content voilet0">
+               <span>Decrypted Form</span>
+               <textarea id="decryptedContent" readonly></textarea>
+           </div>
+           <button class="encrypt" onclick="webdevencrypt.setEncrypt('originalContent','encryptedContent','passcode')">Encrypt</button>
+           <button class="encrypt" onclick="webdevencrypt.setDecrypt('originalContent','decryptedContent','passcode')">Decrypt</button>
+       </div>
 
-
-      <iframe id="iframe" src="./fallout.html" width="95%" height="50%"></iframe>
-<center><button class="buttonX_orange" onclick="l0adA1()">Generate Password</button></center>
+      <iframe id="iframe" style="margin-top: 20mm;" src="./AE5.html" width="95%" height="50%"></iframe>
+<center><button hidden class="buttonX_orange" onclick="l0adA1()">Generate Password</button></center>
 
     <script id="genID" type="text/javascript" src="./A_fallout.js">
     /*Remote script*/
-
     </script>
 
     <script type="text/javascript">
       function l0adA1() {
-        var int = Math.floor(Math.random() * 8);
+        var int = Math.floor(Math.random() * 4);
         document.getElementById("iframe").src = "./fallout"+ int +".html";
-      console.log(int);}
+      }
     </script>
 
   <p style="padding:2mm;"></p>
