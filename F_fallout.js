@@ -61,19 +61,19 @@ var q11 = q8.getFullYear();
 var q12 = q8.getMinutes();
 var q13 = q8.getSeconds();
 var q14 = Math.floor(Math.random() * 180);
-
+var word1 = "p0tato"
 
 
 var result= a7+a5+a4+a6+a5+a3+a4+a1+a8+a2+q10*q13;
-console.log(result);
+console.log(ae5ID +result);
 
 if (navigator.cookieEnabled === false){
   console.log('Cookies are disabled')
-  document.getElementById("jsC1").innerHTML = (ae5ID+result);
+  document.getElementById("jsC1").innerHTML = (word1+result);
 
 }
 if (navigator.cookieEnabled === true){
-  document.getElementById("jsC1").innerHTML = (ae5ID+result);
+  document.getElementById("jsC1").innerHTML = (word1+result);
 
   console.log('Cookies are enabled')
 }

@@ -65,15 +65,15 @@ var q14 = Math.floor(Math.random() * 180);
 
 
 var result= a1+a5+a2+a7+a4+a5+a4+a7+a8+a2+q11*q13;
-console.log(result);
+console.log(ae5ID +result);
 
 if (navigator.cookieEnabled === false){
   console.log('Cookies are disabled')
-  document.getElementById("jsC1").innerHTML = (ae5ID+result);
+  document.getElementById("jsC1").innerHTML = (result);
 
 }
 if (navigator.cookieEnabled === true){
-  document.getElementById("jsC1").innerHTML = (ae5ID+result);
+  document.getElementById("jsC1").innerHTML = (result);
 
   console.log('Cookies are enabled')
 }
