@@ -52,7 +52,7 @@ var charactersLength = characters.length;
    c3 += characters.charAt(Math.floor(Math.random() * charactersLength));
 
 
-var ae5ID = 'AE'+c3+c1+c2+'5'+'--';
+var ae5ID = a7+c3+c1+c2+a1+aa1;
 console.log(ae5ID);
 var q8 = new Date();
 var q9 = q8.getDate();
